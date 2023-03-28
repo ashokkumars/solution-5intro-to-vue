@@ -95,9 +95,7 @@ Vue.component('product', {
         }
     },
     methods: {
-        addToCart(shouldIncrement) {
-            this.$emit('add-to-cart', shouldIncrement, this.variants[this.selectedVariant].variantId)
-        },
+        
 
         updateProductImage(index) {
             this.selectedVariant = index
