@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Solution 5 - Intro to Vue</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="nav-bar"></div>
+
+<div id="app">
+
+  <div class="cart">
+    <p>Cart {{cart.length}}</p>
+  </div>
+
+   <product :premium="premium" @add-to-cart="updateCart"></product>
+   
+</div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+<!-- partial -->
+<script  src="./script2.js"></script>
+</html>
