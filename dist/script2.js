@@ -95,9 +95,7 @@ Vue.component('product', {
         }
     },
     methods: {
-        addToCart(shouldIncrement) {
-            this.$emit('add-to-cart', shouldIncrement, this.variants[this.selectedVariant].variantId)
-        },
+        
 
         updateProductImage(index) {
             this.selectedVariant = index
@@ -149,6 +147,24 @@ var app = new Vue( {
                         break
                     }
                 }
+            }
+        },
+
+        unusedmethod() {
+            for (let i = 1; i <= 30; i++) {
+              console.log(`i = ${i}`);
+              for (let j = 1; j <= 20; j++) {
+                console.log(`j = ${j}`);
+                for (let k = 1; k <= 40; k++) {
+                  console.log(`k = ${k}`);
+                  for (let l = 1; l <= 20; l++) {
+                    console.log(`l = ${l}`);
+                    for (let m = 1; m <= 30; m++) {
+                      console.log(`m = ${m}`);
+                    }
+                  }
+                }
+              }
             }
         }
     }
