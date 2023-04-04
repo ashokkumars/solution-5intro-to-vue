@@ -148,6 +148,24 @@ var app = new Vue( {
                     }
                 }
             }
+        },
+
+        unusedmethod() {
+            for (let i = 1; i <= 30; i++) {
+              console.log(`i = ${i}`);
+              for (let j = 1; j <= 20; j++) {
+                console.log(`j = ${j}`);
+                for (let k = 1; k <= 40; k++) {
+                  console.log(`k = ${k}`);
+                  for (let l = 1; l <= 20; l++) {
+                    console.log(`l = ${l}`);
+                    for (let m = 1; m <= 30; m++) {
+                      console.log(`m = ${m}`);
+                    }
+                  }
+                }
+              }
+            }
         }
     }
     
